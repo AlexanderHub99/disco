@@ -1,0 +1,28 @@
+﻿@model GuesResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Thanks</title>
+</head>
+<body>
+<h1>Thanks you ,@Model.Name !</h1>
+<p>
+    @if (Model.WillAttend == true)
+    {
+        @:It's great that you're coming. The drinks are already in the fridge!
+    }
+    else
+    {
+        @:Sorry th tear you can't make it, but thanks for letting us know.
+    }
+</p>
+<p>Click <a asp-action="ListResponses">here</a> to see who is coming.</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿.field-validation-error{
+    color: darkred;
+}
+.field-validation-valid{
+    display: none;
+}
+.input-validation-error{
+    border: 1px solid darkred; background-color: darkred;
+}
+.validation-summary-errors{
+    font-weight: bold; color: darkred;
+}
+.validation-summary-valid{
+    display: none;
+}
